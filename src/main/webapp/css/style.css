@@ -1,0 +1,511 @@
+/* Nunito family  */
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Hind:wght@300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Devanagari:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
+
+
+/* ###################################### website start ######################################  */
+/* * {
+   border: 1px solid red;
+} */
+
+:root {
+   --nunito: "Nunito", sans-serif;
+   --transitionState1: all .2s 0s linear;
+   --themeColor1: #413b62;
+   --themeColor2: #ff5082;
+}
+
+/* ================================== navbar start ================================== */
+#userProfile {
+   font-size: 0.8rem;
+}
+
+.profile {
+   display: flex;
+   column-gap: 10px;
+   height: 35px;
+   line-height: 1.2;
+   /* border: 2px solid black; */
+}
+
+#navbarSupportedContent ul li:hover::after {
+   content: '';
+   width: 100%;
+   height: 2px;
+   display: block;
+   background-color: var(--themeColor1);
+}
+
+#navbar {
+   /* border: 1px solid black; */
+   /* background-color: rgba(246, 246, 246, 0.763); */
+   backdrop-filter: blur(4px);
+}
+
+.navbar-brand img {
+   width: 65px;
+   height: 50px;
+}
+
+#navbarSupportedContent {
+   font-family: var(--nunito);
+}
+
+#navbarSupportedContent ul li::after {
+   content: '';
+   width: 0%;
+   height: 2px;
+   display: block;
+   background-color: var(--themeColor1);
+   transition: var(--transitionState1);
+}
+
+#navbarSupportedContent ul li:hover::after {
+   content: '';
+   width: 100%;
+   height: 2px;
+   display: block;
+   /* box-shadow: 0px 0px 2px var(--themeColor1); */
+   background-color: var(--themeColor1);
+}
+
+#navbarSupportedContent ul li a {
+   color: var(--themeColor1);
+}
+
+#navbarSupportedContent ul li a:hover {
+   color: var(--themeColor1);
+   text-shadow: 1px 1px 2.5px var(--themeColor1);
+}
+
+
+/* ================================== navbar end ================================== */
+
+
+
+/* ================================== startInfo start ================================== */
+#startInfo {
+   margin-top: 130px;
+}
+
+#startInfo p {
+   font-family: var(--nunito);
+   text-indent: 50px;
+   line-height: 1.8;
+   text-align: justify;
+   /* color: white; */
+}
+
+#startInfo p b {
+   color: var(--themeColor1);
+}
+
+/* ================================== startInfo end ================================== */
+
+
+
+/* ================================== topics start ================================== */
+#topics {
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
+#topics h1 {
+   font-weight: 700;
+   font-family: var(--nunito);
+   word-spacing: 10px;
+   letter-spacing: 3px;
+}
+
+#listTopics {
+   display: flex;
+   gap: 40px;
+}
+
+#listTopics a {
+   text-decoration: none;
+   transition: var(--transitionState1);
+}
+
+#listTopics a:hover {
+   transform: translate(0px, -5px);
+   box-shadow: 0px 0px 50px rgba(128, 128, 128, 0.491);
+}
+
+#listTopics h3 {
+   color: black;
+   font-family: var(--nunito);
+}
+
+
+/* ================================== topics end ================================== */
+
+
+
+/* ================================== footer end ================================== */
+#footer {
+   background-color: var(--themeColor1);
+   padding-top: 15px;
+}
+
+#footer p {
+   color: white;
+   font-family: var(--nunito);
+}
+
+#footer a {
+   text-decoration: none;
+   color: white;
+   transition: var(--transitionState1);
+}
+
+#footer a:hover {
+   color: var(--themeColor2);
+}
+
+/* ================================== footer end ================================== */
+
+
+
+/* ================================== about start ================================== */
+#about {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+   #about {
+      margin-top: 100px;
+      /* margin-bottom: 0px; */
+   }
+}
+
+#about p {
+   line-height: 1.8;
+   font-family: var(--nunito);
+   text-indent: 50px;
+}
+
+#about img {
+   width: 100%;
+   aspect-ratio: 1/1;
+   object-fit: contain;
+}
+
+#about .row {
+   display: flex;
+   column-gap: 10px;
+}
+
+/* ================================== about end ================================== */
+
+
+
+/* ================================== contact start ================================== */
+#contact {
+   margin-top: 130px;
+   margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+   #contact {
+      margin-top: 130px;
+      /* margin-bottom: 50px; */
+   }
+}
+
+#contact h3 {
+   font-family: var(--nunito);
+}
+
+#contact button {
+   border: 2px solid var(--themeColor1);
+   padding: 10px 40px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: var(--nunito);
+   border-radius: 50px;
+   color: var(--themeColor1);
+   background-color: white;
+   transition: var(--transitionState1);
+}
+
+#contact label {
+   font-family: var(--nunito);
+}
+
+#contact button:hover {
+   /* border: 2px solid var(--themeColor2); */
+   padding: 10px 40px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   border-radius: 50px;
+   color: white;
+   background-color: var(--themeColor1);
+}
+
+#contact input,
+#contact textarea {
+   box-shadow: none;
+   transition: var(--transitionState1);
+   font-family: var(--nunito);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+   border: 1px solid black;
+}
+
+/* ================================== contact end ================================== */
+
+
+
+/* ================================== login start ================================== */
+#login {
+   margin-top: 130px;
+   margin-bottom: 100px;
+}
+
+@media screen and (min-width:768px) {
+   #login {
+      margin-top: 130px;
+      margin-bottom: 0px;
+   }
+
+}
+
+#login #loginBtn button {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: var(--themeColor1);
+   padding: 10px 20px;
+   background-color: white;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: var(--nunito);
+   border-radius: 50px;
+   transition: var(--transitionState1);
+}
+
+#login #loginBtn button:hover {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   background-color: var(--themeColor1);
+   border-radius: 50px;
+}
+
+#login #createAcc a {
+   text-decoration: none;
+   color: var(--themeColor2);
+}
+
+#login input {
+   box-shadow: none;
+   transition: var(--transitionState1);
+}
+
+#login input:focus {
+   border: 1px solid var(--themeColor1);
+}
+
+/* ================================== login end ================================== */
+
+
+
+/* ================================== register start ================================== */
+
+#register {
+   margin-top: 130px;
+   margin-bottom: 100px;
+}
+
+#register #registerBtn button {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: var(--themeColor1);
+   padding: 10px 20px;
+   background-color: white;
+   border-radius: 50px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: var(--nunito);
+   transition: var(--transitionState1);
+}
+
+#register #registerBtn button:hover {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   background-color: var(--themeColor1);
+   border-radius: 50px;
+}
+
+#register input {
+   box-shadow: none;
+   transition: var(--transitionState1);
+}
+
+#register input:focus {
+   border: 1px solid var(--themeColor1);
+}
+
+#register #inAcc a {
+   text-decoration: none;
+   color: var(--themeColor2);
+}
+
+/* ================================== register end ================================== */
+
+
+
+/* ================================== admin start ================================== */
+#admin {
+   margin-top: 130px;
+   margin-bottom: 100px;
+}
+
+#admin #note:hover {
+   cursor: not-allowed;
+}
+
+#admin #adloginBtn button {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: var(--themeColor1);
+   padding: 10px 20px;
+   background-color: white;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: var(--nunito);
+   border-radius: 50px;
+   transition: var(--transitionState1);
+}
+
+#admin #adloginBtn button:hover {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   background-color: var(--themeColor1);
+   border-radius: 50px;
+}
+
+#admin input {
+   box-shadow: none;
+   transition: var(--transitionState1);
+}
+
+#admin input:focus {
+   border: 1px solid var(--themeColor1);
+}
+
+/* ================================== admin end ================================== */
+
+
+
+/* ================================== otp start ================================== */
+#otp {
+   margin-top: 150px;
+}
+
+#otp #otpBtn button {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: var(--themeColor1);
+   padding: 10px 20px;
+   background-color: white;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: var(--nunito);
+   border-radius: 50px;
+   transition: var(--transitionState1);
+}
+
+#otp #otpBtn button:hover {
+   border: 2px solid var(--themeColor1);
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   background-color: var(--themeColor1);
+   border-radius: 50px;
+}
+
+#otp input {
+   box-shadow: none;
+   transition: var(--transitionState1);
+}
+
+#otp input:focus {
+   border: 1px solid var(--themeColor1);
+}
+
+/* ================================== otp start ================================== */
+
+
+
+/* ================================== profile start ================================== */
+#profile {
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
+#testTable h1 {
+   font-weight: 600;
+   font-family: var(--nunito);
+}
+
+#testTable {
+   overflow: scroll;
+}
+
+#testTable th,
+#testTable td {
+   font-size: 1.1rem;
+   font-family: var(--nunito);
+}
+
+@media screen and (min-width: 768px) {
+   #testTable {
+      overflow: auto;
+   }
+}
+
+/* ================================== profile start ================================== */
+
+
+
+/* ================================== addQuest start ================================== */
+#addQuest {
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
+/* ================================== addQuest end ================================== */
+
+
+
+/* ================================== question start ================================== */
+#question {
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
+#question p,
+#question label,
+#question button {
+   font-family: var(--nunito);
+}
+
+#question button {
+   font-size: 1.2rem;
+   letter-spacing: 1px;
+}
+
+
+/* ================================== question end ================================== */
+
+
+
+/* ###################################### website end ###################################### */
